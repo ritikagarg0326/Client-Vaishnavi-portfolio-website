@@ -1,1 +1,1 @@
-# Vaishnavi-s-portfolio-website
+# Vaishnavi-portfolio-website

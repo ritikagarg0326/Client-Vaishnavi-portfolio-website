@@ -3,115 +3,170 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vaishnavi Sagar — Social Media Strategist</title>
-
-  <!-- stylesheet -->
+  <title>Vaishnavi Sagar — Social Media Strategist & Influencer</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- NAV only -->
+  <!-- HEADER -->
   <header class="site-header">
-    <nav class="nav container">
+    <nav class="nav">
       <a class="brand" href="#home">Vaishnavi Sagar</a>
       <div class="nav-right">
-        <a href="#portfolio" class="nav-link">Portfolio</a>
-        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="btn-link">Portfolio</a>
+        <a href="#services" class="btn-link">Services</a>
         <a href="#contact" class="btn-primary">Contact</a>
       </div>
     </nav>
-  </header>
 
-  <!-- HERO must be outside header -->
-  <section id="home" class="hero">
-    <div class="hero-inner container">
+    <section id="home" class="hero">
       <div class="hero-left">
         <h1>Vaishnavi Sagar</h1>
         <p class="role">Influencer • Social Media Strategist • Brand Growth Specialist</p>
         <p class="lead">
-          Building high-performing social content for brands — leading social strategy for <strong>Son of Swaad</strong> (25+ franchises).
+          Building high-performing social presence for brands — currently leading social strategy for 
+          <strong>Son of Swaad</strong> (25+ franchises across India).
         </p>
         <div class="hero-ctas">
           <a href="#portfolio" class="btn">View Portfolio</a>
-          <a href="#" class="btn-outline" download>Download Resume</a>
+          <a href="assets/resume.pdf" class="btn-outline" download>Download Resume</a>
         </div>
       </div>
       <div class="hero-right">
-        <img src="images/hero.jpg" alt="Vaishnavi" class="hero-img" />
+        <img src="images/hero.jpg" alt="Vaishnavi" />
       </div>
-    </div>
-  </section>
+    </section>
+  </header>
 
   <main>
-
     <!-- ABOUT -->
-    <section id="about" class="card-section container">
-      <h2>About</h2>
-      <div class="about-grid">
-        <div>
-          <p>I’m Vaishnavi — a social media strategist with 4+ years of experience crafting social-first content, reels, campaign strategy, and influencer collaborations.</p>
-          <ul class="skills">
-            <li>Social Strategy & Planning</li>
-            <li>Short-form Video (Reels & Ads)</li>
-            <li>Influencer Partnerships</li>
-            <li>Analytics & Growth</li>
-          </ul>
-        </div>
-        <div class="profile">
-          <img src="images/profile.jpg" alt="profile" />
+    <section id="about" class="card-section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I’m Vaishnavi — with 4+ years of hands-on experience crafting social-first content, 
+              campaign strategy, and influencer collaborations.
+              I manage content pipeline, growth analytics and brand partnerships for Son of Swaad's 
+              25+ franchises while creating high-performing video content and reels.
+            </p>
+            <ul class="skills">
+              <li>Social Strategy & Planning</li>
+              <li>Short-form Video (Reels & Ads)</li>
+              <li>Influencer Partnerships</li>
+              <li>Analytics & Growth</li>
+            </ul>
+          </div>
+          <div class="profile">
+            <img src="images/profile.jpg" alt="profile" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="card-section container">
-      <h2>Services</h2>
-      <div class="services-grid">
-        <div class="service"><h3>Social Media Management</h3><p>Content calendars, posting, community management.</p></div>
-        <div class="service"><h3>Content Creation</h3><p>Reels, short ads, food videos, photography.</p></div>
-        <div class="service"><h3>Influencer Strategy</h3><p>Campaign planning, outreach & execution.</p></div>
-        <div class="service"><h3>Brand Growth</h3><p>Competitor research, positioning & analytics.</p></div>
+    <section id="services" class="card-section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Social Media Management</h3>
+            <p>Content calendars, posting, community management, and reports.</p>
+          </div>
+          <div class="service">
+            <h3>Content Creation</h3>
+            <p>Reels, short ads, food videos, photography & scripts.</p>
+          </div>
+          <div class="service">
+            <h3>Influencer Strategy</h3>
+            <p>Campaign planning, outreach, and performance-based partnerships.</p>
+          </div>
+          <div class="service">
+            <h3>Brand Growth</h3>
+            <p>Competitor analysis, positioning and monthly growth plans.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- PORTFOLIO (horizontal slider) -->
-    <section id="portfolio" class="card-section container">
-      <h2>Portfolio</h2>
-      <p class="muted">Scroll or use arrows to explore reels & brand videos.</p>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="card-section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p class="muted">Scroll to explore reels, ads, and influencer content.</p>
+        <div class="video-wrapper">
+          <button class="scroll-btn left-btn">❮</button>
+          <div class="video-scroll" id="videoScroll">
 
-      <div class="video-slider-wrap">
-        <button class="scroll-btn left-btn" aria-label="scroll left">❮</button>
+            <!-- Son of Swaad Videos -->
+            <div class="video-card">
+              <video src="videos/son-of-swaad-1.mp4" controls></video>
+              <div class="video-info">
+                <h4>Son of Swaad — Reel 1</h4>
+                <p class="caption">Franchise promo edit.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <video src="videos/son-of-swaad-2.mp4" controls></video>
+              <div class="video-info">
+                <h4>Son of Swaad — Reel 2</h4>
+                <p class="caption">Menu highlight.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <video src="videos/son-of-swaad-3.mp4" controls></video>
+              <div class="video-info">
+                <h4>Son of Swaad — Reel 3</h4>
+                <p class="caption">Food content creation.</p>
+              </div>
+            </div>
 
-        <div class="video-slider" id="videoSlider">
-          <!-- Influencer -->
-          <div class="video-card"><video src="videos/influencer-1.mp4" controls playsinline></video><p class="caption">Influencer 1</p></div>
-          <div class="video-card"><video src="videos/influencer-2.mp4" controls playsinline></video><p class="caption">Influencer 2</p></div>
-          <div class="video-card"><video src="videos/influencer-3.mp4" controls playsinline></video><p class="caption">Influencer 3</p></div>
+            <!-- Influencer Videos -->
+            <div class="video-card">
+              <video src="videos/influencer-1.mp4" controls></video>
+              <div class="video-info">
+                <h4>Influencer Reel 1</h4>
+                <p class="caption">Lifestyle + aesthetic reel.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <video src="videos/influencer-2.mp4" controls></video>
+              <div class="video-info">
+                <h4>Influencer Reel 2</h4>
+                <p class="caption">Brand collaboration edit.</p>
+              </div>
+            </div>
+            <div class="video-card">
+              <video src="videos/influencer-3.mp4" controls></video>
+              <div class="video-info">
+                <h4>Influencer Reel 3</h4>
+                <p class="caption">Engaging short-form content.</p>
+              </div>
+            </div>
 
-          <!-- Son of Swaad -->
-          <div class="video-card"><video src="videos/son-of-swaad-1.mp4" controls playsinline></video><p class="caption">Son of Swaad 1</p></div>
-          <div class="video-card"><video src="videos/son-of-swaad-2.mp4" controls playsinline></video><p class="caption">Son of Swaad 2</p></div>
-          <div class="video-card"><video src="videos/son-of-swaad-3.mp4" controls playsinline></video><p class="caption">Son of Swaad 3</p></div>
+          </div>
+          <button class="scroll-btn right-btn">❯</button>
         </div>
-
-        <button class="scroll-btn right-btn" aria-label="scroll right">❯</button>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="card-section container">
-      <div class="contact-grid">
+    <section id="contact" class="card-section">
+      <div class="container contact-grid">
         <div>
           <h2>Contact</h2>
           <p>Email: <a href="mailto:vaishnavi@example.com">vaishnavi@example.com</a></p>
           <p>Instagram: <a href="https://www.instagram.com/vaishnavisagar11/" target="_blank">@vaishnavisagar11</a></p>
+          <p>Phone / WhatsApp: +91-XXXXXXXXXX</p>
         </div>
-        <form class="contact-form" onsubmit="return false;">
-          <input type="text" placeholder="Your name" required>
-          <input type="email" placeholder="Email" required>
-          <textarea placeholder="Message" rows="4" required></textarea>
-          <button class="btn-primary">Send</button>
+        <form class="contact-form" action="#" onsubmit="return false;">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button class="btn-primary" type="submit">Send Message</button>
         </form>
       </div>
     </section>
@@ -119,11 +174,10 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Vaishnavi Sagar — Social Media Strategist</p>
-    </div>
+    <p>© <span id="year"></span> Vaishnavi Sagar — Social Media Strategist</p>
   </footer>
 
   <script src="js/script.js"></script>
+
 </body>
 </html>

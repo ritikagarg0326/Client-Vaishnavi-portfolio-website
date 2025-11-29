@@ -65,25 +65,27 @@ body { background:#f8f4f9; color:#222; }
   .video-card { min-width:240px; }
 }
 .video-card {
-  min-width:280px;
-  max-width:280px;   /* added max-width to fix size */
-  background:#fff;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
-  flex-shrink:0;
-  display:flex;
-  flex-direction:column;
+  min-width: 320px;   /* width of each video card */
+  max-width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
 }
 
 .video-card video {
-  width:100%;
-  height:160px;       /* fixed height for all videos */
-  object-fit:cover;   /* ensures video fills the box without stretching */
-  display:block;
-  border-bottom:1px solid #eee;
+  width: 100%;
+  height: 250px;        /* slightly bigger height for more impact */
+  object-fit: cover;     /* fills container, zoom effect, slight cropping */
+  display: block;
+  border-bottom: 1px solid #eee;
 }
 
 .video-card .video-info {
-  padding:10px;
+  padding: 10px;
+  text-align: center;
 }
